@@ -30,7 +30,7 @@
     "jumpboxrg": "[concat(parameters('alias'),'-vmimages-rg')]",
     "secretName": "adminpassword",
     "adminusername": "[Concat(parameters('alias'),'-admin')]",
-    "lab1soevmrul": "https://msreadylabs.blob.core.windows.net/workshop/VM-Image.json"
+    "lab1soevmrul": "https://raw.githubusercontent.com/prarolab/soephase2/master/task1/artefacts/lab1-vm-image.json"
 
   },
   "resources": [
