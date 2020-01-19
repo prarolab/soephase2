@@ -42,7 +42,7 @@
     "Subnet1Ref": "[concat(variables('vnet1Ref'),'/subnets/','Management')]",
     "galleryName":"[concat(parameters('alias'),'imagegallery')]",
     "galleryImageDefinitionName":"[concat(parameters('alias'),'-imagedef-linux')]",
-    "galleryImageVersionName":"1.0.0"
+    "galleryImageVersionName":"latest"
 
 
   },
