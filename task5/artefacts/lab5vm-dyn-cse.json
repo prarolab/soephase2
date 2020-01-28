@@ -176,7 +176,7 @@
                   "displayName": "Security-hardening"
                 },
                 "dependsOn": [
-                    "[concat('Microsoft.Compute/virtualMachines/', variables('jumpboxvm1').name)]"
+                    "[concat('Microsoft.Compute/virtualMachines/',variables('jumpboxvm1').name)]"
                 ],
                 "properties": {
                   "publisher": "Microsoft.Azure.Extensions",
