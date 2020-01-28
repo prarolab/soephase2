@@ -30,7 +30,7 @@
       "jumpboxrg": "[concat(parameters('alias'),'-vmimages-rg')]",
       "secretName": "adminpassword",
       "adminusername": "[Concat(parameters('alias'),'-admin')]",
-      "lab1soevmrul": "https://raw.githubusercontent.com/prarolab/soephase2/master/Task2/artefacts/lab5vm-dyn-cse.json"
+      "lab1soevmrul": "https://raw.githubusercontent.com/prarolab/soephase2/master/task5/artefacts/lab5vm-dyn-cse.json"
   
     },
     "resources": [
