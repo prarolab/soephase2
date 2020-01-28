@@ -29,11 +29,12 @@
         "location": "East US",
         "storagetype": "Standard_LRS",
         "avname": "[concat(parameters('alias'),'-prodavset')]",
-        "commandToRun": "[concat('sh soelab2.sh')]",
+       
         "ip": "10.10.3.13"
   
       },
       "scriptpath" :"https://msreadylabs.blob.core.windows.net/workshop/soelab2.sh",
+         "commandToRun": "[concat('sh soelab2.sh')]",
       "imagePublisher": "RedHat",
       "imageOffer": "RHEL",
       "imageSku": "7.6",
