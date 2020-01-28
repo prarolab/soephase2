@@ -169,7 +169,7 @@
    
             {
                 "type": "extensions",
-                "name": "[concat(parameters('vmName'),'/SecurityBenchmarks')]",
+                "name": "SecurityBenchmarks",
                 "apiVersion": "2017-03-30",
                 "location": "[resourceGroup().location]",
                 "tags": {
