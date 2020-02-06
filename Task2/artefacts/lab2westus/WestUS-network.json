@@ -39,7 +39,7 @@
       {
         "apiVersion": "2015-06-15",
         "type": "Microsoft.Network/networkSecurityGroups",
-        "name": "[concat(parameters('alias'),variables('vNet1').subnet2name,'NSG01')]",
+        "name": "[concat(parameters('alias'),variables('vNet1').subnet2name,'NSG03')]",
         "location": "[variables('vNet1').location]",
         "tags": {
           "Environment": "Production",
@@ -82,7 +82,7 @@
       {
         "apiVersion": "2015-06-15",
         "type": "Microsoft.Network/networkSecurityGroups",
-        "name": "[concat(parameters('alias'),variables('vNet1').subnet3name,'NSG01')]",
+        "name": "[concat(parameters('alias'),variables('vNet1').subnet3name,'NSG04)]",
         "location": "[variables('vNet1').location]",
         "tags": {
           "Environment": "Production",
@@ -131,8 +131,8 @@
         "comments": "This is the first vNet",
         "dependsOn": [
   
-          "[resourceId('Microsoft.Network/networkSecurityGroups',concat(parameters('alias'),variables('vNet1').subnet2name,'NSG01'))]",
-          "[resourceId('Microsoft.Network/networkSecurityGroups',concat(parameters('alias'),variables('vNet1').subnet3name,'NSG01'))]"
+          "[resourceId('Microsoft.Network/networkSecurityGroups',concat(parameters('alias'),variables('vNet1').subnet2name,'NSG03'))]",
+          "[resourceId('Microsoft.Network/networkSecurityGroups',concat(parameters('alias'),variables('vNet1').subnet3name,'NSG04'))]"
   
   
         ],
@@ -160,7 +160,7 @@
               "properties": {
                 "addressPrefix": "[variables('vNet1').subnet2Prefix]",
                 "networkSecurityGroup": {
-                  "id": "[resourceId('Microsoft.Network/networkSecurityGroups',concat(parameters('alias'),variables('vNet1').subnet2name,'NSG01'))]"
+                  "id": "[resourceId('Microsoft.Network/networkSecurityGroups',concat(parameters('alias'),variables('vNet1').subnet2name,'NSG04'))]"
                 }
               }
   
@@ -171,7 +171,7 @@
               "properties": {
                 "addressPrefix": "[variables('vNet1').subnet3Prefix]",
                 "networkSecurityGroup": {
-                  "id": "[resourceId('Microsoft.Network/networkSecurityGroups',concat(parameters('alias'),variables('vNet1').subnet3name,'NSG01'))]"
+                  "id": "[resourceId('Microsoft.Network/networkSecurityGroups',concat(parameters('alias'),variables('vNet1').subnet3name,'NSG03'))]"
                 }
               }
             },
@@ -188,10 +188,7 @@
       
     ],
     "outputs": {
-      "result": {
-        "value": "[concat('Created Vnet ---------->',variables('vNet2').name)]",
-        "type": "string"
-  
+      
       }
     }
   }
