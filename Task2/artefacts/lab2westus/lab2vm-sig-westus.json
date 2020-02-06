@@ -24,9 +24,9 @@
     },
     "variables": {
       "jumpboxvm1": {
-        "name": "[concat(parameters('alias'),'-soerhel75-westus')]",
+        "name": "[concat(parameters('alias'),'-soerh75-wus')]",
         "size": "Standard_D2_v2",
-        "location": "East US",
+        "location": "West US",
         "storagetype": "Standard_LRS",
         "avname": "[concat(parameters('alias'),'-prodavset')]",
   
@@ -37,7 +37,7 @@
       "imagename": "[concat(parameters('alias'),'-rhel-image01')]",
       "imagerg": "[concat(parameters('alias'),'-vmimages-rg')]",
       "vnet1rg": "[concat(parameters('alias'),'-network-rg')]",
-      "vnet1name": "[Concat(parameters('alias'),'-vnet1')]",
+      "vnet1name": "[Concat(parameters('alias'),'-vnet2')]",
       "vnet1Ref": "[resourceId(variables('vNet1rg'),'Microsoft.Network/virtualNetworks',variables('vNet1name'))]",
       "Subnet1Ref": "[concat(variables('vnet1Ref'),'/subnets/','Management')]",
       "galleryName":"[concat(parameters('alias'),'imagegallery')]",
