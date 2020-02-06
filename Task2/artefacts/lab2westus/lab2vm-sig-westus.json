@@ -28,7 +28,7 @@
         "size": "Standard_D2_v2",
         "location": "West US",
         "storagetype": "Standard_LRS",
-        "avname": "[concat(parameters('alias'),'-prodavset')]",
+        "avname": "[concat(parameters('alias'),'-prodavset01')]",
   
         "ip": "10.20.3.11"
   
