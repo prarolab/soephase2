@@ -160,7 +160,7 @@
               "properties": {
                 "addressPrefix": "[variables('vNet1').subnet2Prefix]",
                 "networkSecurityGroup": {
-                  "id": "[resourceId('Microsoft.Network/networkSecurityGroups',concat(parameters('alias'),variables('vNet1').subnet2name,'NSG04'))]"
+                  "id": "[resourceId('Microsoft.Network/networkSecurityGroups',concat(parameters('alias'),variables('vNet1').subnet2name,'NSG03'))]"
                 }
               }
   
@@ -171,7 +171,7 @@
               "properties": {
                 "addressPrefix": "[variables('vNet1').subnet3Prefix]",
                 "networkSecurityGroup": {
-                  "id": "[resourceId('Microsoft.Network/networkSecurityGroups',concat(parameters('alias'),variables('vNet1').subnet3name,'NSG03'))]"
+                  "id": "[resourceId('Microsoft.Network/networkSecurityGroups',concat(parameters('alias'),variables('vNet1').subnet3name,'NSG04'))]"
                 }
               }
             },
